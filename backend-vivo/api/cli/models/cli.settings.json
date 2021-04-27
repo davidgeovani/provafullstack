@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clis",
+  "info": {
+    "name": "Cli",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "text",
+      "required": true,
+      "default": "50",
+      "minLength": 5
+    },
+    "cpf": {
+      "type": "biginteger",
+      "unique": true,
+      "required": true,
+      "min": "10"
+    },
+    "telefone": {
+      "type": "biginteger",
+      "required": true,
+      "min": "10"
+    }
+  }
+}
